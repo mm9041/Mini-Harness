@@ -1,0 +1,38 @@
+# Local credentials and environment overrides (keep the public template)
+.env
+.env.*
+*.env
+*.env.*
+!.env.example
+!*.env.example
+
+# Local agent state, conversation logs, and assistant memory
+.mini-harness/
+.workbuddy/
+*.jsonl
+*.log
+
+# Python caches, virtual environments, and build output
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Installed Node dependencies (keep package.json and package-lock.json)
+node_modules/
+
+# Local editor and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini

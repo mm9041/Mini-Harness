@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mini-harness"
+version = "0.1.0"
+description = "一个可运行的迷你 agent harness,用来理解 DeepSeek Harness 的架构"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+mini-harness = "mini_harness.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["mini_harness*"]
+
+[tool.setuptools.package-data]
+mini_harness = ["webui_static/*.html"]
+
+[project.optional-dependencies]
+images = ["Pillow>=10.0"]

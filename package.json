@@ -1,0 +1,9 @@
+{
+  "name": "mini-harness-sandbox-runtime",
+  "private": true,
+  "description": "Pinned DeepSeek Harness Windows ACL sandbox runner for mini-harness",
+  "dependencies": {
+    "@deepseek-ai/dsh-sandbox-windows-acl": "0.1.7-rc.2",
+    "koffi": "3.3.2"
+  }
+}
